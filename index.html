@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ahmed Ashraf Ramadan | Software Engineer — Laravel, PHP, Go &amp; React | Cairo, Egypt</title>
+<meta name="description" content="Ahmed Ashraf Ramadan (أحمد أشرف رمضان) — Software Engineer in Cairo with nearly 5 years building web products and business systems: Laravel and PHP backend, Go and React, multi-tenant SaaS, e-commerce and ERP. Currently building Ilora, an AI-native business platform, at IVERA.">
+<meta name="author" content="Ahmed Ashraf Ramadan">
+<meta name="theme-color" content="#F2EEE6">
+<link rel="canonical" href="https://tech-ahmed-ashraf.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315171C'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-style='italic' font-size='34' fill='%23F2EEE6'%3EA%3C/text%3E%3Ccircle cx='47' cy='45' r='4' fill='%23C2410C'/%3E%3C/svg%3E">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Ahmed Ashraf Ramadan — Software Engineer">
+<meta property="og:description" content="I turn business needs into working software. Laravel · PHP · Go · React — building Ilora, an AI-native ERP, at IVERA.">
+<meta property="og:url" content="https://tech-ahmed-ashraf.github.io/">
+<meta property="og:image" content="https://tech-ahmed-ashraf.github.io/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ahmed Ashraf Ramadan",
+  "alternateName": ["أحمد أشرف رمضان", "Ahmed Ashraf"],
+  "jobTitle": "Software Engineer",
+  "worksFor": {"@type": "Organization", "name": "IVERA"},
+  "alumniOf": {"@type": "CollegeOrUniversity", "name": "Helwan University"},
+  "address": {"@type": "PostalAddress", "addressLocality": "Cairo", "addressCountry": "EG"},
+  "url": "https://tech-ahmed-ashraf.github.io/",
+  "image": "https://github.com/tech-ahmed-ashraf.png",
+  "email": "mailto:tech.ahmed.ashraf@gmail.com",
+  "sameAs": [
+    "https://www.linkedin.com/in/tech-ahmed-ashraf",
+    "https://github.com/tech-ahmed-ashraf"
+  ],
+  "knowsAbout": ["Laravel", "PHP", "Go", "React", "TypeScript", "REST APIs", "Multi-tenant SaaS", "E-commerce", "ERP", "PostgreSQL", "MySQL", "Redis", "AI-assisted development"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F2EEE6;--card:#FBF9F5;--ink:#15171C;--muted:#5E5D58;--line:#DCD6CB;--accent:#C2410C;--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+::selection{background:var(--accent);color:#fff}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+.mono{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace}
+
+/* grain + progress */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+#progress{position:fixed;top:0;left:0;height:2px;width:100%;background:var(--accent);transform-origin:0 50%;transform:scaleX(0);z-index:60}
+
+/* nav */
+nav.top{position:sticky;top:0;z-index:50;transition:background .3s,border-color .3s,backdrop-filter .3s;border-bottom:1px solid transparent}
+nav.top.scrolled{background:rgba(242,238,230,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-color:var(--line)}
+nav.top .wrap{display:flex;justify-content:space-between;align-items:center;height:64px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+nav.top .brand{color:var(--ink);text-decoration:none;font-weight:500}
+nav.top .links a{text-decoration:none;margin-left:26px;position:relative}
+nav.top .links a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+nav.top .links a:hover{color:var(--ink)}
+nav.top .links a:hover::after,nav.top .links a.active::after{transform:scaleX(1)}
+nav.top .links a.active{color:var(--ink)}
+
+/* hero */
+.hero{min-height:calc(100vh - 64px);display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center;padding:40px 0 80px;position:relative}
+.status{display:inline-flex;align-items:center;gap:10px;font-size:13px;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 14px 6px 10px;margin-bottom:28px}
+.dot{width:8px;height:8px;border-radius:50%;background:#16A34A;position:relative}
+.dot::after{content:"";position:absolute;inset:0;border-radius:50%;background:#16A34A;animation:ping 2s var(--ease) infinite}
+@keyframes ping{0%{transform:scale(1);opacity:.7}80%,100%{transform:scale(2.8);opacity:0}}
+h1{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(46px,6.2vw,80px);line-height:.98;letter-spacing:-.015em;margin:0}
+h1 .line{display:block;overflow:hidden;padding-bottom:.08em}
+h1 .w{display:inline-block;transform:translateY(105%);transition:transform 1s var(--ease)}
+.ready h1 .w{transform:none}
+h1 em{color:var(--accent);background:linear-gradient(var(--accent),var(--accent)) no-repeat 0 94%/0% 3px;transition:background-size 1.2s var(--ease) 1.1s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.ready h1 em{background-size:100% 3px}
+.ready .lede{font-size:18.5px;color:#34353A;max-width:620px;margin:28px 0 32px}
+.fade{opacity:0;transform:translateY(16px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.ready .fade{opacity:1;transform:none}
+.ready .d1{transition-delay:.55s}.ready .d2{transition-delay:.7s}.ready .d3{transition-delay:.85s}.ready .d0{transition-delay:.1s}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;border:1px solid var(--ink);text-decoration:none;font-size:14px;font-weight:500;transition:background .25s,color .25s,border-color .25s,transform .25s var(--ease)}
+.btn .arr{transition:transform .3s var(--ease)}
+.btn:hover .arr{transform:translateX(4px)}
+.btn.solid{background:var(--ink);color:var(--paper)}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn.solid:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.portrait{position:relative;width:240px;height:240px}
+@media (min-width:861px){h1 .line{white-space:nowrap}}
+@media (max-width:860px){}
+.portrait img{width:100%;height:100%;border-radius:50%;object-fit:cover;background:#fff;position:relative;z-index:2;border:6px solid var(--card);box-shadow:0 20px 50px -20px rgba(21,23,28,.35)}
+.portrait .ring{position:absolute;inset:-22px;border-radius:50%;z-index:1}
+.portrait .ring text{font:500 11px "JetBrains Mono",monospace;letter-spacing:.32em;fill:var(--muted);text-transform:uppercase}
+.portrait .ring svg{width:100%;height:100%;animation:spin 28s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.scroll-cue{position:absolute;left:0;bottom:28px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px}
+.scroll-cue i{width:1px;height:36px;background:var(--line);position:relative;overflow:hidden;display:block}
+.scroll-cue i::after{content:"";position:absolute;left:0;top:-36px;width:1px;height:36px;background:var(--ink);animation:drip 2.2s var(--ease) infinite}
+@keyframes drip{to{top:36px}}
+
+/* marquee */
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:18px 0;background:var(--card)}
+.marquee .track{display:flex;gap:48px;width:max-content;animation:slide 38s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+.marquee span{font-family:"Instrument Serif",serif;font-size:30px;white-space:nowrap;color:var(--ink)}
+.marquee span::after{content:"✦";font-family:Inter,sans-serif;font-size:14px;color:var(--accent);margin-left:48px;vertical-align:middle}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding:110px 0;position:relative}
+.kicker{font-family:"JetBrains Mono",monospace;font-size:12.5px;letter-spacing:.08em;color:var(--accent);margin:0 0 14px}
+h2{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(38px,5vw,58px);line-height:1.02;letter-spacing:-.01em;margin:0 0 44px;max-width:760px}
+h2 em{color:var(--accent)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+.about-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:start}
+.about-grid p{font-size:18px;margin:0 0 18px;color:#2A2B30}
+.facts{display:grid;gap:14px}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 24px;display:flex;align-items:baseline;gap:16px}
+.fact b{font-family:"Instrument Serif",serif;font-weight:400;font-size:52px;line-height:1;min-width:150px}
+.fact span{font-size:14.5px;color:var(--muted)}
+
+/* work */
+.work{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.case{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;position:relative;overflow:hidden;transition:transform .45s var(--ease),box-shadow .45s var(--ease),border-color .45s}
+.case::before{content:"";position:absolute;inset:0;background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),rgba(194,65,12,.09),transparent 45%);opacity:0;transition:opacity .4s;pointer-events:none}
+.case:hover{transform:translateY(-6px);box-shadow:0 26px 50px -30px rgba(21,23,28,.35);border-color:#CDBFAF}
+.case:hover::before{opacity:1}
+.case .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.case .where{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--accent)}
+.case .num{font-family:"Instrument Serif",serif;font-size:22px;color:#B9B0A2}
+.case h3{margin:0 0 14px;font-size:22px;letter-spacing:-.01em}
+.case dl{margin:0;font-size:15px}
+.case dt{font-weight:600;margin-top:12px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.case dd{margin:4px 0 0;color:#2A2B30}
+.stack{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
+.stack span{font-family:"JetBrains Mono",monospace;font-size:11.5px;border:1px solid var(--line);border-radius:999px;padding:3px 10px;color:var(--muted);background:var(--paper)}
+.case.wide{grid-column:span 2;display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.case.wide .side{border-left:1px dashed var(--line);padding-left:28px}
+
+/* terminal */
+.term{background:#15171C;color:#E8E3D9;border-radius:14px;padding:16px 18px;font-family:"JetBrains Mono",monospace;font-size:12.5px;line-height:1.7;box-shadow:0 20px 40px -24px rgba(0,0,0,.6)}
+.term .bar{display:flex;gap:6px;margin-bottom:10px}
+.term .bar i{width:10px;height:10px;border-radius:50%;background:#3A3D45;display:block}
+.term .bar i:first-child{background:#E5534B}.term .bar i:nth-child(2){background:#D9A441}.term .bar i:nth-child(3){background:#57A55A}
+.term .c{color:#8C8A84}.term .k{color:#F0A27A}.term .g{color:#8BC28B}
+.term .cursor{display:inline-block;width:7px;height:14px;background:#E8E3D9;vertical-align:-2px;animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+
+/* timeline */
+.timeline{position:relative;padding-left:36px}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:1px;background:var(--line)}
+.timeline .fill{position:absolute;left:7px;top:6px;width:1px;background:var(--accent);height:0;transition:height .2s linear}
+.job{position:relative;padding:0 0 44px}
+.job:last-child{padding-bottom:0}
+.job::before{content:"";position:absolute;left:-36px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--paper);border:1px solid var(--ink)}
+.job.in::before{background:var(--accent);border-color:var(--accent);transition:background .4s .2s,border-color .4s .2s}
+.job .when{font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--muted)}
+.job h3{margin:6px 0 2px;font-size:21px;letter-spacing:-.01em}
+.job .co{color:var(--muted);margin:0 0 12px}
+.job ul{margin:0;padding-left:18px;font-size:15.5px;max-width:760px}
+.job li{margin:6px 0}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.skill{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.skill b{display:block;font-family:"JetBrains Mono",monospace;font-weight:500;font-size:12.5px;color:var(--accent);margin-bottom:12px}
+.skill .chips{display:flex;flex-wrap:wrap;gap:6px}
+.skill .chips span{font-size:13.5px;border:1px solid var(--line);border-radius:8px;padding:3px 10px;background:var(--paper)}
+
+/* contact */
+.contact{background:var(--ink);color:var(--paper);border-radius:28px;padding:72px 56px;margin:0 0 80px;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;width:520px;height:520px;right:-140px;top:-200px;border-radius:50%;background:radial-gradient(circle,rgba(194,65,12,.45),transparent 65%);animation:float 10s ease-in-out infinite alternate}
+@keyframes float{to{transform:translate(-60px,60px)}}
+.contact .kicker{color:#F0A27A}
+.contact h2{color:var(--paper);margin-bottom:20px}
+.contact p{font-size:18px;max-width:600px;color:#CFC9BE;margin:0 0 34px;position:relative}
+.contact .big{display:inline-block;font-family:"Instrument Serif",serif;font-size:clamp(28px,4.5vw,52px);text-decoration:none;color:var(--paper);border-bottom:1px solid rgba(242,238,230,.3);transition:color .3s,border-color .3s;position:relative;word-break:break-all}
+.contact .big:hover{color:#F0A27A;border-color:#F0A27A}
+.contact .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:38px;position:relative}
+.contact .btn{border-color:rgba(242,238,230,.35);color:var(--paper)}
+.contact .btn.solid{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.contact .btn:hover{border-color:#F0A27A;color:#F0A27A}
+.contact .btn.solid:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+footer{padding:0 0 48px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;min-height:auto;padding:28px 0 90px;gap:28px}
+  .portrait{width:150px;height:150px;order:-1;margin-left:14px}
+  .portrait .ring{inset:-16px}
+  .about-grid,.work,.skills{grid-template-columns:1fr}
+  .case.wide{grid-column:auto;grid-template-columns:1fr}
+  .case.wide .side{border-left:0;padding-left:0;border-top:1px dashed var(--line);padding-top:20px}
+  nav.top .links{display:none}
+  section{padding:80px 0}
+  .fact b{min-width:120px;font-size:44px}
+  .contact{padding:52px 26px;border-radius:22px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  h1 .w,.fade,.reveal{transform:none!important;opacity:1!important}
+  }
+</style>
+</head>
+<body>
+<div id="progress"></div>
+
+<nav class="top" id="nav"><div class="wrap">
+  <a class="brand" href="#top">Ahmed Ashraf Ramadan</a>
+  <span class="links"><a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></span>
+</div></nav>
+
+<div class="wrap" id="top">
+<header class="hero">
+  <div>
+    <div class="status fade d0"><span class="dot"></span>Currently building <strong>Ilora</strong> at IVERA</div>
+    <h1>
+      <span class="line"><span class="w">I turn business needs</span></span>
+      <span class="line"><span class="w" style="transition-delay:.12s">into <em>working software.</em></span></span>
+    </h1>
+    <p class="lede fade d1">I'm a Software Engineer in Cairo with nearly 5 years building web products and business systems — backend-first with <strong>Laravel &amp; PHP</strong>, now also <strong>Go &amp; React</strong>. Today I'm building Ilora, an AI-native business platform, at IVERA.</p>
+    <div class="btns fade d2">
+      <a class="btn solid" href="#work">See my work <span class="arr">→</span></a>
+      <a class="btn" href="https://www.linkedin.com/in/tech-ahmed-ashraf">LinkedIn</a>
+      <a class="btn" href="https://github.com/tech-ahmed-ashraf">GitHub</a>
+    </div>
+  </div>
+  <div class="portrait fade d3">
+    <div class="ring" aria-hidden="true"><svg viewBox="0 0 300 300"><defs><path id="circ" d="M150,150 m-138,0 a138,138 0 1,1 276,0 a138,138 0 1,1 -276,0"/></defs><text><textPath href="#circ" textLength="860" lengthAdjust="spacing">Software Engineer · Laravel · Go · React · AI · </textPath></text></svg></div>
+    <img src="https://github.com/tech-ahmed-ashraf.png?size=480" alt="Ahmed Ashraf Ramadan" width="240" height="240">
+  </div>
+  <div class="scroll-cue fade d3"><i></i>Scroll</div>
+</header>
+</div>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Laravel</span><span>PHP 8</span><span>Go</span><span>React</span><span>TypeScript</span><span>PostgreSQL</span><span>Redis</span><span>Multi-tenant SaaS</span><span>ERP</span><span>E-commerce</span><span>AI-assisted development</span>
+  <span>Laravel</span><span>PHP 8</span><span>Go</span><span>React</span><span>TypeScript</span><span>PostgreSQL</span><span>Redis</span><span>Multi-tenant SaaS</span><span>ERP</span><span>E-commerce</span><span>AI-assisted development</span>
+</div></div>
+
+<div class="wrap">
+<section id="about">
+  <p class="kicker reveal">01 — About</p>
+  <h2 class="reveal">Backend-first. <em>Business-minded.</em></h2>
+  <div class="about-grid">
+    <div class="reveal">
+      <p>I started with Laravel and PHP, shipping e-commerce platforms, internal ERP modules and two commercial products sold on CodeCanyon.</p>
+      <p>At IVERA I work across Go, React and TypeScript on Ilora. I use AI-assisted development every day to move fast — and I own every change I ship.</p>
+      <p>I also work on the client side: presenting modules in live demos and helping gather requirements, so what we build matches how the business actually runs.</p>
+    </div>
+    <div class="facts">
+      <div class="fact reveal"><b><span data-count="5" data-prefix="~">0</span> yrs</b><span>building production web systems</span></div>
+      <div class="fact reveal"><b><span data-count="1300" data-suffix="+">0</span></b><span>CodeCanyon sales across two products</span></div>
+      <div class="fact reveal"><b><span data-count="12">0</span></b><span>Laravel products worked on at Algoriza</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <p class="kicker reveal">02 — Selected work</p>
+  <h2 class="reveal">Things I've built, and <em>why they mattered.</em></h2>
+  <div class="work">
+    <article class="case wide reveal">
+      <div>
+        <div class="top"><span class="where">IVERA · Ilora</span><span class="num">01</span></div>
+        <h3>Meetings — video calls with live AI transcription</h3>
+        <dl>
+          <dt>Problem</dt><dd>Teams needed video meetings inside the business platform, in both Arabic and English.</dd>
+          <dt>What I built</dt><dd>Most of the module on top of LiveKit: real-time Arabic–English transcription and translation with OpenAI Realtime and Whisper, recording, waiting rooms and breakout rooms.</dd>
+        </dl>
+        <div class="stack"><span>Go</span><span>React</span><span>TypeScript</span><span>LiveKit</span><span>OpenAI Realtime</span><span>Whisper</span></div>
+      </div>
+      <div class="side">
+        <div class="term" aria-hidden="true">
+          <div class="bar"><i></i><i></i><i></i></div>
+          <div id="typed"></div>
+        </div>
+      </div>
+    </article>
+    <article class="case reveal">
+      <div class="top"><span class="where">IVERA · Ilora</span><span class="num">02</span></div>
+      <h3>Omnichannel inbox</h3>
+      <dl>
+        <dt>Problem</dt><dd>Customer conversations were scattered across many apps.</dd>
+        <dt>What I built</dt><dd>One inbox for WhatsApp, Facebook Messenger, Instagram, TikTok and Telegram, with branch routing and role-based permissions.</dd>
+      </dl>
+      <div class="stack"><span>Go</span><span>React</span><span>WebSockets</span><span>Meta APIs</span></div>
+    </article>
+    <article class="case reveal">
+      <div class="top"><span class="where">IVERA · Ilora</span><span class="num">03</span></div>
+      <h3>Biometric attendance bridge</h3>
+      <dl>
+        <dt>Problem</dt><dd>On-premise fingerprint devices couldn't talk to a cloud HR system.</dd>
+        <dt>What I built</dt><dd>A Windows service in Go that connects ZKTeco devices (TCP/UDP, ADMS push) to the cloud, so attendance flows into HR, leave and payroll automatically.</dd>
+      </dl>
+      <div class="stack"><span>Go</span><span>ZKTeco</span><span>PostgreSQL</span></div>
+    </article>
+    <article class="case reveal">
+      <div class="top"><span class="where">Algoriza · Dashop</span><span class="num">04</span></div>
+      <h3>Dashop — multi-tenant e-commerce SaaS</h3>
+      <dl>
+        <dt>Problem</dt><dd>Merchants needed to launch and run their own online stores on one shared platform.</dd>
+        <dt>What I built</dt><dd>Notification and SMS systems on Laravel queues, order discounts and marketer profit alerts — and a faster dashboard and product search by cutting redundant queries and adding caching.</dd>
+      </dl>
+      <div class="stack"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Queues</span><span>Redis</span></div>
+    </article>
+    <article class="case reveal">
+      <div class="top"><span class="where">Algoriza · CodeCanyon</span><span class="num">05</span></div>
+      <h3>Cargo Pro — courier management</h3>
+      <dl>
+        <dt>Result</dt><dd>630+ sales and a 5-star rating.</dd>
+        <dt>What I built</dt><dd>Payment gateways (PayPal, Paystack, Iyzico), shipment tracking and rate calculation, six storefront themes, 9 languages, and releases 7.1 to 7.8.</dd>
+      </dl>
+      <div class="stack"><span>Laravel</span><span>PHP</span><span>Blade</span><span>REST API</span></div>
+    </article>
+    <article class="case reveal">
+      <div class="top"><span class="where">Algoriza · CodeCanyon</span><span class="num">06</span></div>
+      <h3>LaraBuilder — SaaS website builder</h3>
+      <dl>
+        <dt>Result</dt><dd>680+ sales.</dd>
+        <dt>What I built</dt><dd>Paddle payments, a self-update system so buyers upgrade without reinstalling, an upgrade to PHP 8.1, and a refactor of the admin controllers across its modular platform.</dd>
+      </dl>
+      <div class="stack"><span>Laravel</span><span>PHP 8.1</span><span>Livewire</span><span>Paddle</span></div>
+    </article>
+    <article class="case reveal">
+      <div class="top"><span class="where">Algoriza · Mobile backend</span><span class="num">07</span></div>
+      <h3>Coffee-chain ordering backend</h3>
+      <dl>
+        <dt>Problem</dt><dd>A coffee chain needed a mobile app backend customers could trust with their money.</dd>
+        <dt>What I built</dt><dd>REST APIs for OTP login, coupons and store locator; a wallet and loyalty points with automatic refunds on cancellation; FCM push notifications through queued jobs.</dd>
+      </dl>
+      <div class="stack"><span>Laravel</span><span>REST API</span><span>FCM</span><span>Queues</span></div>
+    </article>
+    <article class="case reveal">
+      <div class="top"><span class="where">Personal project</span><span class="num">08</span></div>
+      <h3>Egyptian Shipping Tracker</h3>
+      <dl>
+        <dt>Problem</dt><dd>Tracking a parcel in Egypt means checking a different site for every courier.</dd>
+        <dt>What I built</dt><dd>One full-stack tracking platform for Egyptian shipping companies, with background jobs, caching and end-to-end tests.</dd>
+      </dl>
+      <div class="stack"><span>Next.js</span><span>TypeScript</span><span>Node.js</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span></div>
+    </article>
+  </div>
+</section>
+
+<section id="experience">
+  <p class="kicker reveal">03 — Experience</p>
+  <h2 class="reveal">Where I've worked.</h2>
+  <div class="timeline" id="timeline"><div class="fill" id="tfill"></div>
+    <div class="job reveal">
+      <div class="when">Jan 2026 — Present</div>
+      <h3>Software Engineer</h3>
+      <p class="co">IVERA · Cairo</p>
+      <ul>
+        <li>Ship complete features on Ilora — data model, API, UI and tests — across HR, CRM, Sales, Marketing, Inventory and POS.</li>
+        <li>Found and fixed a cross-tenant data-access (IDOR) vulnerability; secured WebSocket connections with JWT; added Playwright end-to-end tests.</li>
+        <li>Present modules to clients in live demos and help gather requirements.</li>
+      </ul>
+    </div>
+    <div class="job reveal">
+      <div class="when">Mar 2022 — Jan 2026</div>
+      <h3>Junior → Mid-level Back End → Full-stack Developer</h3>
+      <p class="co">Algoriza · Cairo</p>
+      <ul>
+        <li>Worked on 12 Laravel products: a multi-tenant e-commerce SaaS, an internal ERP, a mobile ordering backend and two CodeCanyon products.</li>
+        <li>Built internal ERP modules: project costing, monthly cost reports, insurance, performance reviews and payroll exports.</li>
+        <li>Also built storefront themes on Bagisto, a portal on Botble CMS, and a school-management events module and API.</li>
+        <li>Mentored a junior developer, reviewed pull requests, and led an internal session on AI agents.</li>
+      </ul>
+    </div>
+    <div class="job reveal">
+      <div class="when">Jan 2022 — Mar 2022</div>
+      <h3>Back End Developer</h3>
+      <p class="co">Farouk Group · Egypt</p>
+      <ul><li>Built back-end features for e-commerce projects with Laravel and MySQL.</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <p class="kicker reveal">04 — Skills</p>
+  <h2 class="reveal">What I work with.</h2>
+  <div class="skills">
+    <div class="skill reveal"><b>// backend</b><div class="chips"><span>PHP 8</span><span>Laravel</span><span>Go (Fiber)</span><span>REST APIs</span><span>Queues &amp; jobs</span><span>WebSockets</span><span>Multi-tenancy</span></div></div>
+    <div class="skill reveal"><b>// frontend</b><div class="chips"><span>React</span><span>TypeScript</span><span>Livewire</span><span>Blade</span><span>HTML</span><span>CSS</span></div></div>
+    <div class="skill reveal"><b>// data</b><div class="chips"><span>PostgreSQL</span><span>MySQL</span><span>Redis</span><span>Query optimization</span><span>Caching</span></div></div>
+    <div class="skill reveal"><b>// integrations</b><div class="chips"><span>PayPal</span><span>Paystack</span><span>Iyzico</span><span>Paddle</span><span>LiveKit</span><span>OpenAI</span><span>Firebase</span><span>Meta &amp; WhatsApp APIs</span></div></div>
+    <div class="skill reveal"><b>// quality</b><div class="chips"><span>PHPUnit</span><span>Pest</span><span>Playwright</span><span>Code review</span></div></div>
+    <div class="skill reveal"><b>// ways of working</b><div class="chips"><span>Claude Code</span><span>Git &amp; GitHub</span><span>Agile</span><span>Client demos</span><span>Requirements</span></div></div>
+  </div>
+</section>
+
+<section class="contact reveal" id="contact">
+  <p class="kicker">05 — Contact</p>
+  <h2>Have a project in mind?</h2>
+  <p>I'm available for freelance work — web apps, SaaS and business systems — and always happy to talk software, ERP and AI.</p>
+  <a class="big" href="mailto:tech.ahmed.ashraf@gmail.com">tech.ahmed.ashraf@gmail.com</a>
+  <div class="row">
+    <a class="btn solid" href="https://www.linkedin.com/in/tech-ahmed-ashraf">LinkedIn <span class="arr">→</span></a>
+    <a class="btn" href="https://github.com/tech-ahmed-ashraf">GitHub</a>
+    <a class="btn" href="https://wa.me/201128512941">WhatsApp · +20 112 851 2941</a>
+  </div>
+</section>
+
+<footer><span>© 2026 Ahmed Ashraf Ramadan · أحمد أشرف رمضان</span><span>Cairo, Egypt</span></footer>
+</div>
+
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  requestAnimationFrame(function(){ document.body.classList.add('ready'); });
+
+  // nav + progress + timeline fill
+  var nav = document.getElementById('nav'), bar = document.getElementById('progress');
+  var tl = document.getElementById('timeline'), tf = document.getElementById('tfill');
+  function onScroll(){
+    var y = scrollY, h = document.documentElement.scrollHeight - innerHeight;
+    nav.classList.toggle('scrolled', y > 10);
+    bar.style.transform = 'scaleX(' + (h > 0 ? y / h : 0) + ')';
+    if (tl){ var r = tl.getBoundingClientRect(); var p = Math.min(1, Math.max(0, (innerHeight * .6 - r.top) / r.height)); tf.style.height = (p * (r.height - 12)) + 'px'; }
+  }
+  addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  // reveal on scroll (staggered per group)
+  var els = [].slice.call(document.querySelectorAll('.reveal'));
+  if (reduce || !('IntersectionObserver' in window)) { els.forEach(function(e){ e.classList.add('in'); }); }
+  else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (!en.isIntersecting) return;
+        var el = en.target, sib = [].slice.call(el.parentNode.children).filter(function(c){ return c.classList.contains('reveal'); });
+        el.style.transitionDelay = (Math.max(0, sib.indexOf(el)) % 4) * 90 + 'ms';
+        el.classList.add('in'); io.unobserve(el);
+        el.querySelectorAll('[data-count]').forEach(count);
+      });
+    }, {threshold:.15, rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(e){ io.observe(e); });
+  }
+  if (reduce) document.querySelectorAll('[data-count]').forEach(count);
+
+  // count-up
+  function count(el){
+    if (el.dataset.done) return; el.dataset.done = 1;
+    var to = +el.dataset.count, pre = el.dataset.prefix || '', suf = el.dataset.suffix || '';
+    if (reduce){ el.textContent = pre + to.toLocaleString('en-US') + suf; return; }
+    var t0 = null, dur = 1400;
+    function step(t){ if(!t0) t0 = t; var k = Math.min(1, (t - t0) / dur); k = 1 - Math.pow(1 - k, 3);
+      el.textContent = pre + Math.round(to * k).toLocaleString('en-US') + suf; if (k < 1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+
+  // card spotlight
+  document.querySelectorAll('.case').forEach(function(c){
+    c.addEventListener('pointermove', function(e){ var r = c.getBoundingClientRect();
+      c.style.setProperty('--mx', (e.clientX - r.left) + 'px'); c.style.setProperty('--my', (e.clientY - r.top) + 'px'); });
+  });
+
+  // active nav link
+  var links = {}; document.querySelectorAll('nav.top .links a').forEach(function(a){ links[a.getAttribute('href').slice(1)] = a; });
+  if ('IntersectionObserver' in window){
+    var so = new IntersectionObserver(function(en){ en.forEach(function(e){ if (e.isIntersecting && links[e.target.id]){
+      Object.keys(links).forEach(function(k){ links[k].classList.remove('active'); }); links[e.target.id].classList.add('active'); } }); }, {rootMargin:'-45% 0px -50% 0px'});
+    document.querySelectorAll('section[id]').forEach(function(s){ so.observe(s); });
+  }
+
+  // terminal typing (Meetings card)
+  var lines = [
+    ['c','// live meeting · ar ⇄ en'],
+    ['k','speaker_1 (ar): '],['','نبدأ بمراجعة أرقام المبيعات'],
+    ['g','→ en: '],['',"Let's start by reviewing the sales numbers"],
+    ['k','speaker_2 (en): '],['','Inventory sync is live for all branches'],
+    ['g','→ ar: '],['','مزامنة المخزون شغالة لكل الفروع']
+  ];
+  var out = document.getElementById('typed');
+  if (out){
+    var html = lines.map(function(l, i){ var br = (l[0]==='c' || (l[0]==='' && i>0)) ? '<br>' : ''; return '<span class="'+l[0]+'" data-t="'+l[1].replace(/"/g,'&quot;')+'"></span>' + br; }).join('');
+    out.innerHTML = html + '<span class="cursor"></span>';
+    var spans = out.querySelectorAll('[data-t]');
+    if (reduce){ spans.forEach(function(s){ s.textContent = s.dataset.t; }); }
+    else {
+      var started = false;
+      var to = new IntersectionObserver(function(en){ if (en[0].isIntersecting && !started){ started = true; run(0, 0); to.disconnect(); } }, {threshold:.4});
+      to.observe(out);
+      function run(i, j){ if (i >= spans.length){ setTimeout(function(){ spans.forEach(function(s){ s.textContent=''; }); run(0,0); }, 4000); return; }
+        var t = spans[i].dataset.t; spans[i].textContent = t.slice(0, j + 1);
+        if (j + 1 < t.length) setTimeout(function(){ run(i, j + 1); }, 28); else setTimeout(function(){ run(i + 1, 0); }, 260); }
+    }
+  }
+})();
+</script>
+</body>
+</html>
